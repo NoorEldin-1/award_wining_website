@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Nosifer&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-gaming: "Nosifer", sans-serif;
+  --font-reg: "Roboto", sans-serif;
+}
+
+body {
+  @apply text-black select-none;
+  background-color: #dfdff0;
+}
+.navbtn {
+  &::before {
+    content: attr(data-content);
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500 opacity-100;
+  }
+  &::after {
+    content: attr(data-content);
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-[100%] duration-500 opacity-0;
+  }
+  &:hover::before {
+    @apply translate-y-[-100%] opacity-0;
+  }
+  &:hover::after {
+    @apply -translate-y-1/2 opacity-100;
+  }
+}
+.landing-btn {
+  &::before {
+    content: attr(data-content);
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500 opacity-100;
+  }
+  &::after {
+    content: attr(data-content);
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-[100%] duration-500 opacity-0;
+  }
+  &:hover::before {
+    @apply translate-y-[-100%] opacity-0;
+  }
+  &:hover::after {
+    @apply -translate-y-1/2 opacity-100;
+  }
+}
+.storybtn {
+  &::before {
+    content: attr(data-content);
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500 opacity-100;
+  }
+  &::after {
+    content: attr(data-content);
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-[100%] duration-500 opacity-0;
+  }
+  &:hover::before {
+    @apply translate-y-[-100%] opacity-0;
+  }
+  &:hover::after {
+    @apply -translate-y-1/2 opacity-100;
+  }
+}
+.contactbtn {
+  &::before {
+    content: attr(data-content);
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500 opacity-100;
+  }
+  &::after {
+    content: attr(data-content);
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-[100%] duration-500 opacity-0;
+  }
+  &:hover::before {
+    @apply translate-y-[-100%] opacity-0;
+  }
+  &:hover::after {
+    @apply -translate-y-1/2 opacity-100;
+  }
+}
