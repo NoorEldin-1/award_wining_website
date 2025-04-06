@@ -1,4 +1,4 @@
 # React + Tailwind + Framer Motion
 
 
-this is e-commerce website i built it using react & tailwind and framer motion
+this is award wining website i built it using react & tailwind and framer motion
